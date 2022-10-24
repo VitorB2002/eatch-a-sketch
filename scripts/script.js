@@ -6,10 +6,16 @@ function paint(gridItem){
     gridItem.classList.add("grid-item-painted");
 }
 
+function mouseHovering(gridItem){
+    gridItem.addEventListener("mouseout", () => {
+        paint(gridItem);
+    })
+}
+
 for(i = 0; i < 256 ; i++){
     let gridItemClone = gridItem.cloneNode();
-    gridItemClone.addEventListener("click", () => {
-        paint(gridItemClone);
+    gridItemClone.addEventListener("mouseover", () => {
+        mouseHovering(gridItemClone);
     })
     container.append(gridItemClone);
 }
