@@ -66,10 +66,10 @@ function createGrid(){
 
 gridButton.addEventListener("click", () => {
     oldQtdGrid = qtdGrid;
-    qtdGrid = prompt("Choose how many items on the grid (max. 100): ");
+    qtdGrid = prompt("Choose a value (max. 100), and the grid will be recreated as value x value pixels: ");
     
     while(qtdGrid > 100 || qtdGrid <= 0){
-        qtdGrid = prompt("Invalid value, choose again: ");
+        qtdGrid = prompt("Invalid value, choose again (max. 100): ");
     }
 
     createGrid();
