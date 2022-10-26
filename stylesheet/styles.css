@@ -4,6 +4,12 @@
     margin: 0px;
 }
 
+
+#header, 
+body {
+    background-color: #101820FF;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -18,22 +24,35 @@ body {
     justify-content: center;
     width: 1200px;
     background-color: black;
+    border-radius: 15px;
+}
+
+#container-border {
+    border: 8px solid #F2AA4CFF;
+    border-radius: 15px;
 }
 
 .grid-item {
-    background-color: red;
+    background-color: black;
+    border-radius: 5px;
     flex-shrink: 0;
 }
 
 .grid-item-painted {
-    background-color: blue;
+    background-color: antiquewhite;
     flex-shrink: 0;
 }
 
 #header {
+    display: flex;
     width: 1200px;
     height: 70px;
-    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-text {
+    color: antiquewhite;
 }
 
 button {
